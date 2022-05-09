@@ -37,15 +37,17 @@ jobs:
       matrix:
         config:
           - image: "docker-ubuntu-systemd"
-            tag: "latest"
-          - image: "docker-ubuntu-systemd"
             tag: "bionic"
-          - image: "docker-ubuntu-systemd"
-            tag: "focal"
-          - image: "debian-systemd"
-            tag: "latest"
-          - image: "debian-systemd"
-            tag: "bookworm"
+          - image: "ubuntu"
+            tag: "xenial"
+          - image: "ubuntu"
+            tag: "xenial-20210804"
+          - image: "debian"
+            tag: "jessie"
+          - image: "debian"
+            tag: "stretch"
+          - image: "debian"
+            tag: "buster"
     steps:
       - name: checkout
         uses: actions/checkout@v3
