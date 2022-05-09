@@ -3,6 +3,13 @@
   hosts: all
   become: yes
   gather_facts: yes
+  vars:
+    - dnsmasq_service_resolved_disabled: "{{ (ansible_distribution == 'Ubuntu' and ansible_distribution_major_version is version('18', '>=')) }}"
+    - dnsmasq_dnsmasq_d_files_present:
+      example-com:
+        - address=/mail.example.com/192.168.0.8
+        - address=/www.example.com/192.168.0.9
+    - dnsmasq_dnsmasq_d_files_absent: {}
   pre_tasks:
     - name: include vars
       include_vars: "{{ playbook_dir }}/../../tests/vars/main.yml"
