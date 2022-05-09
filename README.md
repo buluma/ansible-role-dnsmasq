@@ -1,10 +1,10 @@
-# [ansible-dnsmasq](#ansible-dnsmasq)
+# [dnsmasq](#dnsmasq)
 
 Set up dnsmasq in Debian-like systems.
 
 |GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
 |------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-ansible-dnsmasq/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ansible-dnsmasq/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-ansible-dnsmasq/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-ansible-dnsmasq)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/ansible-dnsmasq)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/ansible-dnsmasq)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ansible-dnsmasq.svg)](https://github.com/buluma/ansible-role-ansible-dnsmasq/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-ansible-dnsmasq.svg)](https://github.com/buluma/ansible-role-ansible-dnsmasq/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-ansible-dnsmasq.svg)](https://github.com/buluma/ansible-role-ansible-dnsmasq/pulls/)|
+|[![github](https://github.com/buluma/ansible-role-dnsmasq/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-dnsmasq/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-dnsmasq/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-dnsmasq)|[![quality](https://img.shields.io/ansible/quality/59135)](https://galaxy.ansible.com/buluma/dnsmasq)|[![downloads](https://img.shields.io/ansible/role/d/59135)](https://galaxy.ansible.com/buluma/dnsmasq)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-dnsmasq.svg)](https://github.com/buluma/ansible-role-dnsmasq/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-dnsmasq.svg)](https://github.com/buluma/ansible-role-dnsmasq/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-dnsmasq.svg)](https://github.com/buluma/ansible-role-dnsmasq/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -13,12 +13,14 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
 ---
 - name: Converge
   hosts: all
-  become: true
+  become: yes
+  gather_facts: yes
   pre_tasks:
     - name: include vars
       include_vars: "{{ playbook_dir }}/../../tests/vars/main.yml"
+
   roles:
-    - ../../../
+    - role: buluma.dnsmasq
 ```
 
 The machine needs to be prepared. In CI this is done using `molecule/default/prepare.yml`:
@@ -26,8 +28,12 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
 ---
 - name: Prepare
   hosts: all
-  become: true
-  tasks: []
+  gather_facts: no
+  become: yes
+
+  roles:
+    - role: buluma.bootstrap
+    - role: buluma.sysctl
 ```
 
 
@@ -112,8 +118,16 @@ dnsmasq_dnsmasq_d_files_absent: {}
 
 ## [Requirements](#requirements)
 
-- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-ansible-dnsmasq/blob/main/requirements.txt).
+- pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-dnsmasq/blob/main/requirements.txt).
 
+## [Status of used roles](#status-of-requirements)
+
+The following roles are used to prepare a system. You can prepare your system in another way.
+
+| Requirement | GitHub | GitLab |
+|-------------|--------|--------|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
+|[buluma.sysctl](https://galaxy.ansible.com/buluma/sysctl)|[![Build Status GitHub](https://github.com/buluma/ansible-role-sysctl/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-sysctl/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-sysctl/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-sysctl)|
 
 ## [Context](#context)
 
@@ -121,7 +135,7 @@ This role is a part of many compatible roles. Have a look at [the documentation 
 
 Here is an overview of related roles:
 
-![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-ansible-dnsmasq/png/requirements.png "Dependencies")
+![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-dnsmasq/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
 
@@ -140,11 +154,11 @@ The minimum version of Ansible required is 2.1, tests have been done to:
 
 
 
-If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-ansible-dnsmasq/issues)
+If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-dnsmasq/issues)
 
 ## [Changelog](#changelog)
 
-[Role History](https://github.com/buluma/ansible-role-ansible-dnsmasq/blob/master/CHANGELOG.md)
+[Role History](https://github.com/buluma/ansible-role-dnsmasq/blob/master/CHANGELOG.md)
 
 ## [License](#license)
 
