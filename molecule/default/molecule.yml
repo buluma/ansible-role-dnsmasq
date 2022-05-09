@@ -14,7 +14,7 @@ lint: |
 driver:
   name: docker
 platforms:
-  - name: "ansible-dnsmasq-${image:-ubuntu}-${tag:-bionic}${TOX_ENVNAME}"
+  - name: "dnsmasq-${image:-ubuntu}-${tag:-bionic}${TOX_ENVNAME}"
     image: "${namespace:-buluma}/${image:-ubuntu}:${tag:-bionic}"
     command: /sbin/init
     volumes:

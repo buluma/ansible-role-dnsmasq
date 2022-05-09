@@ -56,13 +56,13 @@ galaxy:
   stage: deploy
   needs: []
   script:
-    - ansible-galaxy role info buluma.ansible-dnsmasq
+    - ansible-galaxy role info buluma.dnsmasq
 
 role_testing:
   stage: test
   needs: []
   script:
-    - image=${image} tag=${tag} ansible-galaxy install buluma.ansible-dnsmasq
+    - image=${image} tag=${tag} ansible-galaxy install buluma.dnsmasq
   retry: 1
   parallel:
     matrix:

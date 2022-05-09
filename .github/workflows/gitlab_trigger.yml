@@ -17,13 +17,13 @@ jobs:
         with:
           status: starting
           channel: "#ansible"
-          message: Starting buluma.ansible-dnsmasq GitLab Trigger...
+          message: Starting buluma.dnsmasq GitLab Trigger...
         if: always()
       - uses: actions/checkout@v3
       - name: Mirror + trigger CI
         uses: buluma/gitlab-mirror-ci-action@1.0.6
         with:
-          args: "buluma/ansible-role-ansible-dnsmasq"
+          args: "buluma/ansible-role-dnsmasq"
         env:
           GITLAB_HOSTNAME: "gitlab.com"
           GITLAB_USERNAME: "buluma"
