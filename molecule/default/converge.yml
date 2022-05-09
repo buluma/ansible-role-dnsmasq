@@ -5,6 +5,7 @@
   gather_facts: yes
   pre_tasks:
     - name: include vars
+      # TODO: move to vars
       include_vars: "{{ playbook_dir }}/../../tests/vars/main.yml"
 
   roles:
