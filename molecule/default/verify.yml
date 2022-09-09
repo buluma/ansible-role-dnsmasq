@@ -3,7 +3,7 @@
   hosts: all
   become: true
   tasks:
-    - name: install test dependencies
+    - name: Install test dependencies
       ansible.builtin.apt:
         name:
           - dnsutils
@@ -11,7 +11,7 @@
         update_cache: true
         cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
 
-    - name: test dns installation
+    - name: Test dns installation
       ansible.builtin.shell: >
         dig @127.0.0.1 mail.example.com
         | grep 'ANSWER SECTION' -A 1
