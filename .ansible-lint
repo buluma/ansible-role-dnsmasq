@@ -12,3 +12,6 @@ exclude_paths:
   - ./.tests
   - ./.github
   - ./requirements.yml
+
+skip_list:
+  - risky-shell-pipe
