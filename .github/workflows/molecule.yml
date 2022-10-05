@@ -52,7 +52,7 @@ jobs:
           - image: "debian-systemd"
             tag: "latest"
           - image: "debian-systemd"
-            tag: "bookworm"
+            tag: "buster"
     steps:
       - name: checkout
         uses: actions/checkout@v3

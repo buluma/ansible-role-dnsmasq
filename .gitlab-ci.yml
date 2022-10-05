@@ -28,7 +28,7 @@ molecule:
       - image: "debian-systemd"
         tag: "latest"
       - image: "debian-systemd"
-        tag: "bookworm"
+        tag: "buster"
 
 testing:
   stage: test
@@ -50,4 +50,4 @@ testing:
       - image: "debian-systemd"
         tag: "latest"
       - image: "debian-systemd"
-        tag: "bookworm"
+        tag: "buster"
