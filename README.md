@@ -1,6 +1,6 @@
 # [dnsmasq](#dnsmasq)
 
-Set up dnsmasq in Debian-like systems.
+Install and configure dnsmasq on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
 |------|------|-------|---------|-------|------|-------------|
@@ -148,10 +148,13 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|[Ubuntu](https://hub.docker.com/repository/docker/buluma/ubuntu/general)|all|
+|[Alpine](https://hub.docker.com/repository/docker/buluma/alpine/general)|all|
 |[Debian](https://hub.docker.com/repository/docker/buluma/debian/general)|all|
+|[EL](https://hub.docker.com/repository/docker/buluma/enterpriselinux/general)|8|
+|[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|all|
+|[Ubuntu](https://hub.docker.com/repository/docker/buluma/ubuntu/general)|all|
 
-The minimum version of Ansible required is 2.10, tests have been done to:
+The minimum version of Ansible required is 2.12, tests have been done to:
 
 - The previous version.
 - The current version.

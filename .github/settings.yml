@@ -3,6 +3,6 @@
 # Ansible managed
 #
 repository:
-  description: Set up dnsmasq in Debian-like systems.
+  description: Install and configure dnsmasq on your system.
   homepage: https://buluma.github.io/
-  topics: system, networking, dns, ansible, molecule, tox, playbook
+  topics: dnsmasq, dns, dhcp, ansible, molecule, tox, playbook
