@@ -51,6 +51,8 @@ jobs:
             tag: "bullseye"
           - image: "enterpriselinux"
             tag: "8"
+          - image: "enterpriselinux"
+            tag: "latest"
           - image: "fedora-systemd"
             tag: "38"
           - image: "fedora-systemd"
@@ -62,7 +64,7 @@ jobs:
           - image: "docker-ubuntu-systemd"
             tag: "focal"
           - image: "docker-ubuntu-systemd"
-            tag: "bionic"
+            tag: "lunar"
     steps:
       - name: checkout
         uses: actions/checkout@v4
