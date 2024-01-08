@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.0](https://github.com/buluma/ansible-role-dnsmasq/tree/0.2.0) (2024-01-02)
+
+[Full Changelog](https://github.com/buluma/ansible-role-dnsmasq/compare/0.1.4...0.2.0)
+
 ## [0.1.4](https://github.com/buluma/ansible-role-dnsmasq/tree/0.1.4) (2023-12-30)
 
 [Full Changelog](https://github.com/buluma/ansible-role-dnsmasq/compare/0.1.3...0.1.4)
