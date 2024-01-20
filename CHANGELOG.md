@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump buluma/molecule-action from 6.0.1 to 6.0.3 [\#18](https://github.com/buluma/ansible-role-dnsmasq/pull/18) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/molecule-action from 6.0.0 to 6.0.1 [\#17](https://github.com/buluma/ansible-role-dnsmasq/pull/17) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.2.0](https://github.com/buluma/ansible-role-dnsmasq/tree/0.2.0) (2024-01-02)
