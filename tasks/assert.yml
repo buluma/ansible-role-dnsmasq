@@ -1,5 +1,4 @@
 ---
-
 - name: assert | Test dnsmasq_port
   ansible.builtin.assert:
     that:
