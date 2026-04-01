@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump docker/setup-buildx-action from 3 to 4 [\#34](https://github.com/buluma/ansible-role-dnsmasq/pull/34) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 24.12.2 to 25.1.0 [\#31](https://github.com/buluma/ansible-role-dnsmasq/pull/31) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 24.12.1 to 24.12.2 [\#30](https://github.com/buluma/ansible-role-dnsmasq/pull/30) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump ansible/ansible-lint from 24.12.0 to 24.12.1 [\#29](https://github.com/buluma/ansible-role-dnsmasq/pull/29) ([dependabot[bot]](https://github.com/apps/dependabot))
