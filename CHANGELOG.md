@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-dnsmasq/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-dnsmasq/compare/26.6.2...HEAD)
+
+**Merged pull requests:**
+
+- Bump release-drafter/release-drafter from 7 to 7.6.0 [\#39](https://github.com/buluma/ansible-role-dnsmasq/pull/39) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [26.6.2](https://github.com/buluma/ansible-role-dnsmasq/tree/26.6.2) (2026-07-21)
 
 [Full Changelog](https://github.com/buluma/ansible-role-dnsmasq/compare/26.6.1...26.6.2)
