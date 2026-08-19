@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump ansible/ansible-lint from 26.6.0 to 26.8.0 [\#40](https://github.com/buluma/ansible-role-dnsmasq/pull/40) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 7 to 7.6.0 [\#39](https://github.com/buluma/ansible-role-dnsmasq/pull/39) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [26.6.2](https://github.com/buluma/ansible-role-dnsmasq/tree/26.6.2) (2026-07-21)
@@ -34,7 +35,6 @@
 - Bump buluma/dependabot-auto-merge-action from 2.1.1 to 2.1.2 [\#21](https://github.com/buluma/ansible-role-dnsmasq/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#20](https://github.com/buluma/ansible-role-dnsmasq/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#19](https://github.com/buluma/ansible-role-dnsmasq/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Update Role [\#15](https://github.com/buluma/ansible-role-dnsmasq/pull/15) ([buluma](https://github.com/buluma))
 
 ## [0.3.0](https://github.com/buluma/ansible-role-dnsmasq/tree/0.3.0) (2024-01-20)
 
@@ -52,6 +52,10 @@
 ## [0.1.4](https://github.com/buluma/ansible-role-dnsmasq/tree/0.1.4) (2023-12-30)
 
 [Full Changelog](https://github.com/buluma/ansible-role-dnsmasq/compare/0.1.3...0.1.4)
+
+**Merged pull requests:**
+
+- Update Role [\#15](https://github.com/buluma/ansible-role-dnsmasq/pull/15) ([buluma](https://github.com/buluma))
 
 ## [0.1.3](https://github.com/buluma/ansible-role-dnsmasq/tree/0.1.3) (2023-12-24)
 
